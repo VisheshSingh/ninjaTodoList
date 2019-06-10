@@ -26,3 +26,10 @@ addTodo.addEventListener('submit', e => {
   // RESET FORM FIELDS
   addTodo.reset();
 });
+
+// DELETING TODOS
+todos.addEventListener('click', e => {
+  if (e.target.classList.contains('delete')) {
+    e.target.parentElement.remove();
+  }
+});
